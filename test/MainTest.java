@@ -18,7 +18,7 @@ class MainTest {
         list1.add("tuv");
 
         List<String> result = Main.qwe(list);
-        Assertions.assertEquals(list1, result);
+        Assertions.assertEquals(list1, result,"Error");
     }
     @Test
     @DisplayName("NoEntries")
@@ -30,7 +30,7 @@ class MainTest {
         List<String> list1 = new ArrayList<>();
 
         List<String> result = Main.qwe(list);
-        Assertions.assertEquals(list1, result);
+        Assertions.assertEquals(list1, result,"Error");
     }
 
 }

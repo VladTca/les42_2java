@@ -36,6 +36,14 @@ public class Main {
             }
         }
 
+//        for (String s : list) {
+//            map.merge(s, 1, Integer::sum);
+//        }
+
+//        for (String s : list) {
+//            map.compute(s, (key, count) -> count == null ? 1 : count + 1);
+//        }
+
         List<String> resultList = new ArrayList<>();
         for (Map.Entry<String, Integer> entry : map.entrySet()) {
             if (entry.getValue() >= 2) {
@@ -43,6 +51,15 @@ public class Main {
             }
 
         }
+
+//        List<String> resultList = new ArrayList<>();
+//        Set<String> uniqueElements = new HashSet<>(list); // Убираем дубликаты
+//
+//        for (String s : uniqueElements) {
+//            if (Collections.frequency(list, s) >= 2) {
+//                resultList.add(s);
+//            }
+//        }
         return resultList;
     }
 }

@@ -16,10 +16,21 @@ public class Main {
         list.add("ghi");
         list.add("ghi");
         list.add("ghi");
+        list.add("ghi");
+        list.add("ghi");
+        list.add("ghi");
         list.add("jkl");
         list.add("mno");
         list.add("mno");
+        list.add("mno");
+        list.add("mno");
+        list.add("mno");
+        list.add("mno");
         list.add("pqr");
+        list.add("tuv");
+        list.add("tuv");
+        list.add("tuv");
+        list.add("tuv");
         list.add("tuv");
         list.add("tuv");
         return list;
@@ -46,17 +57,17 @@ public class Main {
 
         List<String> resultList = new ArrayList<>();
         for (Map.Entry<String, Integer> entry : map.entrySet()) {
-            if (entry.getValue() >= 2) {
+            if (entry.getValue() >= 5) {
                 resultList.add(entry.getKey());
             }
 
         }
 
 //        List<String> resultList = new ArrayList<>();
-//        Set<String> uniqueElements = new HashSet<>(list); // Убираем дубликаты
+//        Set<String> uniqueElements = new HashSet<>(list);
 //
 //        for (String s : uniqueElements) {
-//            if (Collections.frequency(list, s) >= 2) {
+//            if (Collections.frequency(list, s) >= 5) {
 //                resultList.add(s);
 //            }
 //        }
